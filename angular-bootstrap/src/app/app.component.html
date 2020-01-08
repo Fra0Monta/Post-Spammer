@@ -1,0 +1,16 @@
+<div class="container">
+  <form class="jumbotron">
+      <h3 class="display-4">Hello, what's your name? </h3>
+      <div class="form-group">
+        <label for="name">Add your name:</label>
+        <input name="name" #newname class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="surname">Add your surname:</label>
+        <input name="surname" #newsurname class="form-control">
+      </div>
+    <button (click)="addArticle(newname, newsurname)" class="btn btn-primary">
+      Submit
+    </button>
+  </form>
+</div>
